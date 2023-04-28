@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+ul{
+    list-style: none;
+}
+#container{
+    width: 100%;
+    background-color: #f0fff0;
+}
+#hader{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    position: relative;
+    
+}
+#hader .logo a{
+    color: #430cc3;
+    font-size: 30px;
+    font-weight: 800;
+    top: 5px;
+    left: 30px;
+    margin:8px 30px;
+    position: absolute;
+    float: left;
+    transition: all 0.3s ease;
+    border: 0.25px solid blue;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+#hader .logo a:hover{
+    color: #f907079a;
+    border: 0.25px solid red;
+    
+}
+.navber{
+    float: right;
+    display: flex;
+
+}
+.navber .nav{
+    display: flex;
+    align-items: flex-start;
+
+
+}
+.navber .nav li{
+    margin-right: 30px;
+    margin-top: 22px;
+
+
+}
+.navber .nav li .active{
+    color:#dc1dc0;
+}
+.navber .nav li a{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s;
+    position: relative;
+    
+}
+.navber .nav li a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #870fe9;
+    position: absolute;
+    bottom:-3px;
+    left: 0px;
+    transition: all 0.5s ease;
+
+}
+.navber .nav li a:hover::after{
+    width: 80%;
+}
+
+.navber .nav li a:hover{
+    color: #e1308f;
+}
+#hader .navber .btn{
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 8px 30px;
+    transition: all 0.60s ease;
+}
+#hader .navber .btn:hover{
+    color: #ffffff;
+    background-color: rgb(25, 5, 244);
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding-bottom: 30px;
+    background-color: #fff;
+    background-image: url(./imges/b17.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#hero .textSide{
+    text-align: left;
+    padding: 80px 0 0 150px;
+   
+
+}
+#hero .textSide .text{
+    color: #460df1;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 50px;
+}
+#hero .textSide .bgcolor {
+    text-transform: uppercase;
+    color:#ffffff;
+    background:linear-gradient(to left, red, #6d26ab, blue, #870fe9, #dc1dc0);
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 50px;
+    transition: 0.3s;
+    display: inline-block;
+    padding: 10px 10px;
+}
+#hero .textSide .bgcolor:hover{
+    color:#c1f909;
+    background:linear-gradient(to right, red, #6d26ab, blue, #870fe9, #dc1dc0);
+}
+
+#hero .textSide .bg_color:hover::after{
+    width: 100%;
+}
+
+#hero .textSide p{
+    margin: 10px 0 30px 0;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 0.250rem;
+}
+#hero .textSide .btn{
+    background-color: #ff07c9;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0px 75px 16px 14px #31273a82;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 5;
+}
+#hero .textSide .btn::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 38px;
+    background-color: #2a07b6fe;
+    top: 0;
+    left: -50px;
+    z-index: -5;
+    transition: all 0.3s ease;
+}
+#hero .textSide .btn:hover::after{
+    left: 0;
+
+}
+#hero .textSide .btn::before{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 38px;
+    background-color: #2a07b6fe;
+    top: 0;
+    right: -50px;
+    z-index: -5;
+    transition: all 0.3s ease;
+}
+#hero .textSide .btn:hover::before{
+    right: 0;
+
+}
+#container #AppSection {
+    background-color: #000;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+}
+#container #AppSection h2{
+    color: #fff;
+    text-align: center;
+    background-color: #430cc3;
+    padding: 15px 0;
+    display: block;
+    font-size: 40px;
+}
+#container #AppSection h2 a{
+    color: #03e612f5;
+    font-size: 45px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+#container #AppSection h2 a:hover{
+    color: red;
+}
+
+#container #AppSection .video{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+@media (max-width:699px) {
+    #hader .navber .btn {
+        padding: 10px 15px;
+        background-color: #1b124a;
+        color: #fff;
+        font-size: 10px;
+
+    }
+    
+}
